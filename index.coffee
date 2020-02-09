@@ -1,5 +1,3 @@
-# Made by Welby :)
-
 #Refresh rate in milliseconds (1000 = 1 second)
 refreshFrequency: '60s'
 
