@@ -4,18 +4,18 @@ refreshFrequency: '1000000s'
 #Options
 options =
   # Choose where the widget should sit on your screen.
-  verticalPosition    : "custom"        # top | center | bottom | custom
+  verticalPosition    : "bottom"        # top | center | bottom | custom
   horizontalPosition    : "left"        # left | center | right | custom
 
 #Body Style
 style: """
 
   if #{options.verticalPosition} == custom
-    top 63%
+    top 50%
   else if #{options.verticalPosition} == center
     top 50%
   else if #{options.verticalPosition} == bottom
-    top 75%
+    top 68%
   else
     top 1%
 
@@ -27,14 +27,14 @@ style: """
   else if #{options.horizontalPosition} == right
     left 82.5%
   else
-    left 5%
+    left 13%
 
 """
 options:options
 
 #Outputs the images
 render: (output) -> """
-  <img style="height:auto;width:250px;"
-  src="https://i.pinimg.com/originals/73/a6/75/73a675c8452fe6de8e867cdd76d167f3.jpg">
+  <img style="height:auto;width:160px;"
+  src="https://i.pinimg.com/originals/35/c1/fb/35c1fbe30fb3cc6940ce46e128a3283b.png">
   """
 #https://github.githubassets.com/images/modules/logos_page/Octocat.png
